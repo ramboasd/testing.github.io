@@ -1,0 +1,194 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
+  @keyframes fade-inout{
+    0%{opacity: 1; transform: translate(1px) scale(1);}
+    100%{opacity: 0;transform: translate(0px) scale(1);}
+  }
+
+  .fade{
+    animation: fade-inout 1.5s alternate-reverse;
+    font-size: 5em;
+}
+
+  
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.body {
+    min-height: 180vh;
+    background: url('pics/aldous.png') no-repeat;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.red{
+    color: red;
+    font-weight: bold;
+
+}
+
+.blue{
+    color: blue;
+    font-weight: bold;
+
+}
+.logo p{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    background-color:rgb(26, 21, 21);
+    /* display flex - isang linya ng headers horizonal */
+    display: flex;
+    /* justify content - ihiwalay ang logo sa mga headers (home, contact, etc.) exmple: logo                home about etc. */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  
+}
+div.code
+{
+  font-family: "Courier New", monospace;
+  white-space: pre;
+}
+
+.logo{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+
+}
+
+header
+{
+   
+    padding: 5px 100px;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.img_logo{
+    width: 300px;
+}
+
+.navbar a{
+/*position relative - simpleng animation sa home yung puting linya. Remove mo kung  buong navbar may linya */
+position: relative;
+font-size: 15px;
+color:#fff;
+font-weight: 500;
+text-decoration: none;
+margin-left: 60px;
+
+}
+
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 0;
+    /*width 0 start animation */
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+
+}
+
+.navbar a:hover:before{
+    /*width 100 show animation */
+    width: 100%;
+}
+
+.intro{
+    font-size: 100px;
+    color:white;
+}
+
+.details1{
+    font-size: 30px;
+    color:white;
+
+}
+
+.body2 {
+    min-height: 180vh;
+    background: url('pics/upsidedwon.png') no-repeat;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.slc{
+    height: 1000px;
+    width: 2000px;
+}
+.clientsheader{
+    font-size: 100px;
+    color:black;
+    text-align: center;
+}
+
+.clientqoute{
+    font-size: 50px;
+    color:black;
+    text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .-header-text {
+      font-size: 50px;
+      font-weight: 500px;
+    }
+    .-home-btn {
+      width: 100%;
+      text-align: center;
+      padding: 36px 0px 0px 0px;
+    }
+    .-school-logo {
+      text-align: center;
+      margin-top: 15vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 0px;
+    }
+    .-school-logo .-img {
+      height: 200px;
+      margin-top: 5vh;
+    }
+    .-school-logo {
+      text-align: center;
+      margin-top: 15vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 0px;
+    }
+    .-cust-logos {
+      height: 100px !important;
+      margin: 30px;
+    }
+    .-cust-container{
+      padding: 50px;
+    }
+  }
+
+  
